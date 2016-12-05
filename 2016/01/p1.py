@@ -6,7 +6,7 @@ DIR_FACE = {'R': lambda x: (x+1) % 4,
 
 
 def get_directions():
-    with open('data/one_day.csv', 'rb') as f:
+    with open('input.csv', 'rb') as f:
         input = csv.reader(f, delimiter=',', skipinitialspace=True)
         directions = []
         for row in input:
