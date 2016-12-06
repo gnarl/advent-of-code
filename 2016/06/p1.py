@@ -13,6 +13,7 @@ def main():
                  
     text = ''
     for c in columns:
+        # Use max for part 1 of the puzzle
         m = min(c, key=c.get)
         text += m
     print text
