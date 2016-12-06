@@ -2,8 +2,6 @@ import sys
 from collections import defaultdict
 
 def main():
-
-    
     lines = [line.strip() for line in sys.stdin]
     columns = [defaultdict(int) for x in range(0, len(lines[0]))]
 
@@ -17,7 +15,6 @@ def main():
         m = min(c, key=c.get)
         text += m
     print text
-
 
 if __name__ == '__main__':
     main()

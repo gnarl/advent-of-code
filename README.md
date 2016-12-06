@@ -5,5 +5,5 @@ Advent of Code
 
 
 **Resources**
--   [Advent Of Code Polyglot] (https://github.com/ChrisPenner/Advent-Of-Code-Polyglot/blob/master/README.md)
+-   [Advent Of Code Polyglot] (https://github.com/ChrisPenner/Advent-Of-Code-Polyglot)
 -   Advent of Code [subreddit] (https://www.reddit.com/r/adventofcode/)
