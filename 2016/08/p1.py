@@ -29,10 +29,7 @@ def rotate_column(dis, col_num, shifts):
 
 
 def main():
-    dis = []
-    for i in range(HEIGHT):
-        row = ['.'] * LENGTH 
-        dis.append(row) 
+    dis = [['.' for _ in range(LENGTH)] for _ in range(HEIGHT)]
     
     for line in sys.stdin:
 
