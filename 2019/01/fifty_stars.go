@@ -29,6 +29,21 @@ func readLines(path string) ([]string, error) {
 	return lines, scanner.Err()
 }
 
+func fuel_mass(mass int) int {
+	sum := 0
+	for mass > 0 {
+		extra_fuel := int(mass/3) - 2
+		if extra_fuel < 0 {
+			mass = 0
+		} else {
+			sum += extra_fuel
+			mass = extra_fuel
+		}
+
+	}
+	return sum
+}
+
 func main() {
 	fmt.Println("vim-go")
 
@@ -42,7 +57,10 @@ func main() {
 		num, err := strconv.Atoi(line)
 		check(err)
 
-		sum += int(num/3) - 2
+		input_mass := int(num/3) - 2
+		input_mass += fuel_mass(input_mass)
+
+		sum += input_mass
 		fmt.Println(i, line)
 	}
 	fmt.Printf("sum: %d", sum)
